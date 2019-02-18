@@ -1,6 +1,6 @@
 ﻿{
 "compilerOptions": {
-	"outDir": "../../www/kadastr",
+	"outDir": "./dist",
 	"rootDir": "./",
 	"experimentalDecorators": true,
 	"strict": true,
@@ -16,7 +16,6 @@
 	"allowSyntheticDefaultImports": true,
 	"esModuleInterop": true,
 	"skipLibCheck": true,
-	//"noEmit": true,
 	"sourceMap": true
 },
 "exclude": [
