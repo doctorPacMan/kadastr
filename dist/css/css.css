@@ -1,0 +1,42 @@
+@import url('firobjects.css');
+html, body,
+body > div#stage {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	--colour-yellow: #f9ab00;
+	--colour-green: #34a853;
+	--colour-blue: #4285f4;
+	--colour-red: #ea4335;
+}
+body > div#stage {
+	font: 16px 'Consolas';
+	background: whitesmoke;
+	overflow-y: scroll;
+	color: black;
+}
+#stage > div.appcontainer {
+	outline: 1px solid lightgray;
+	background: white;
+	min-height: calc(100% - 48px);
+	margin: 12px auto;
+	width: 936px;
+	display: grid;
+	grid-template-rows: 48px auto 48px;
+}
+.appcontainer > header,
+.appcontainer > footer {
+	background: rgb(250,250,250);
+}
+.appcontainer > div {
+	padding: 12px;
+}
+.appcontainer h2 {
+	margin: 0 0 0 6px;
+	font: 24px/36px Arial;
+}
+

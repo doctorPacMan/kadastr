@@ -1,0 +1,33 @@
+{
+	"name": "task-kadastr",
+	"version": "0.1.0",
+	"private": true,
+	"devDependencies": {
+		"@types/react": "^16.8.2",
+		"@types/react-dom": "^16.8.0",
+		"css-loader": "^2.1.0",
+		"react": "^16.8.1",
+		"react-dom": "^16.8.1",
+		"style-loader": "^0.23.1",
+		"ts-loader": "^5.3.3",
+		"typescript": "^3.3.3",
+		"webpack": "^4.0.0",
+		"webpack-cli": "^3.2.3",
+		"webpack-dev-server": "^3.1.14"
+	},
+	"scripts": {
+		"serve": "webpack --watch ./index.js",
+		"start": "webpack-dev-server"
+	},
+	"browserslist": [],
+	"description": "task-kadastr",
+	"main": "index.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"author": "artempoo@gmail.com",
+	"license": "ISC",
+	"dependencies": {
+		"@types/react": "^16.8.2"
+	}
+}

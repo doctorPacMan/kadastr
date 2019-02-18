@@ -1,0 +1,63 @@
+.firobjects-table {
+	width: 100%;
+	table-layout: fixed;
+	font: 14px 'Arial', sans-serif;
+	border-collapse: collapse;
+	text-align: left;
+}
+.firobjects-table tr::before,
+.firobjects-table th,
+.firobjects-table td {
+	border: 1px solid rgb(222,222,222);
+	padding: 6px 8px;
+	white-space: nowrap;
+}
+.firobjects-table thead tr::before,
+.firobjects-table thead th {font-weight:bold}
+
+.firobjects-table tbody tr {
+    counter-increment: rowNumber;
+}
+.firobjects-table thead tr::before,
+.firobjects-table tbody tr::before {
+	display: table-cell;
+	vertical-align: middle;
+	color: gray;
+	text-align: right;
+}
+.firobjects-table thead tr::before {content: '\2116'}
+.firobjects-table tbody tr::before {
+	content: counter(rowNumber);
+	font-family: monospace;
+}
+.firobjects-table thead tr,
+.firobjects-table tbody tr:nth-child(2n) {
+	background-color: rgba(150,150,150,.05);
+}
+
+.firobjects-table thead tr::before {width:30px}
+.firobjects-table th[id='objectCn'] {width: 140px}
+.firobjects-table th[id='objectTypeName'] {width: 150px}
+.firobjects-table th[id='addressNotes'] {width:auto}
+
+.firobjects-table td[data-type='txt'] {
+	white-space: normal;
+}
+.firobjects-table td[data-type='num'] {
+	font-family: monospace;
+}
+
+.firobjects-table td > a {
+	cursor: pointer;
+	text-decoration: underline;
+    text-decoration-color: gray;
+}
+.firobjects-table td > span {
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	white-space: normal;
+	padding-top: 4px;
+	font-size: 12px;
+	line-height: 1;
+}

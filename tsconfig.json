@@ -1,0 +1,25 @@
+﻿{
+"compilerOptions": {
+	"outDir": "../../www/kadastr",
+	"rootDir": "./",
+	"experimentalDecorators": true,
+	"strict": true,
+	"target": "es5",
+	"module": "es2015",
+	"moduleResolution": "node",
+	"resolveJsonModule": true,
+	"isolatedModules": false,
+	"allowJs": true,
+	"lib": ["dom","dom.iterable","es2015","es2016"],
+	"jsx": "preserve",
+	"forceConsistentCasingInFileNames": true,
+	"allowSyntheticDefaultImports": true,
+	"esModuleInterop": true,
+	"skipLibCheck": true,
+	//"noEmit": true,
+	"sourceMap": true
+},
+"exclude": [
+	"node_modules"
+]
+}
